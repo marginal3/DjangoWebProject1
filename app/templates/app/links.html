@@ -1,0 +1,18 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load static %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<p style="font-size:large; padding:15px 0 15px 0;"> Что такое ранголи? </p>
+<a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BD%D0%B3%D0%BE%D0%BB%D0%B8" target="_blank"><img src="{% static 'app/content/wiki.png'%}" alt="source_pic"></a>
+
+<p style="font-size:large; padding:15px 0 15px 0;"> 10 традиционных индийских блюд, которые вам нужно попробовать </p>
+<a href="https://horosho-tam.ru/indiya/10-traditsionnyh-indiyskih-blyud-kotorye-vam-nuzhno-poprobovat-foto" target="_blank"><img src="{% static 'app/content/ht.png'%}" alt="source_pic"></a>
+
+<p style="font-size:large; padding:15px 0 15px 0;"> 50 интересных фактов об индии </p>
+<a href="https://www.tio.by/info/novosti/50-interesnyx-faktov-ob-indii/" target="_blank"><img src="{% static 'app/content/ti.png'%}" alt="source_pic"></a>
+
+{% endblock %}
